@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_goods_store" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="好商城V5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fafafa"
+        android:orientation="horizontal">
+<CheckBox
+    android:layout_width="30dp"
+    android:layout_height="match_parent"
+    android:id="@+id/checkone"/>
+        <ImageView
+
+            android:id="@+id/imageshop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titleshop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="12243254365346"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="vertical" >
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/priceshop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#ff5001" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/numcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+
+        android:textColor="#ff5001" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/delete"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除"/>
+        <Button
+            android:background="@drawable/shape"
+            android:layout_toLeftOf="@+id/numshopitem"
+            android:id="@+id/addshopitem"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:text="+"/>
+        <Button
+            android:layout_width="35dp"
+            android:layout_toLeftOf="@+id/jianshopitem"
+            android:id="@+id/numshopitem"
+            android:background="@drawable/shape"
+            android:layout_height="match_parent"
+            android:text="1"/>
+        <Button
+            android:background="@drawable/shape"
+            android:id="@+id/jianshopitem"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
